@@ -134,7 +134,7 @@ namespace Polly_Test
         private async Task<HttpResponseMessage> GetResponse(
             HttpRequestMessage message, CancellationToken cancellation)
         {
- 
+
             return await _httpClient.SendAsync(message, HttpCompletionOption.ResponseHeadersRead, cancellation);
 
         }
